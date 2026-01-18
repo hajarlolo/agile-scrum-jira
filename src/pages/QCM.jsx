@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
 import Button from '../components/Button';
 import { players as initialPlayers, questions as allQuestions } from '../data/questions';
 
@@ -15,7 +14,7 @@ const QCM = () => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(null);
 
     // Feedback State (inside modal)
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [wrongAnswers, setWrongAnswers] = useState([]);
 
