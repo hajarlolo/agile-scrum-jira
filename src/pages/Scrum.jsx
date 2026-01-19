@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Card from '../components/Card';
-import { roles, events, artefacts } from '../data/scrumData';
+import { roles, events, artefacts, pillars } from '../data/scrumData';
 
 const Scrum = () => {
     // Separate state for each section to allow contextual display
     const [selectedRole, setSelectedRole] = useState(null);
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [selectedArtefact, setSelectedArtefact] = useState(null);
+    const [selectedPillar, setSelectedPillar] = useState(null);
+
 
     // Reusable Detail Component
     const DetailSection = ({ item, onClose }) => {
@@ -27,7 +29,36 @@ const Scrum = () => {
 
     return (
         <div style={{ paddingBottom: '4rem' }}>
+            {/* 0. PILIERS DE SCRUM */}
+            <section style={{ marginBottom: '4rem' }}>
+                <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                    ▪️ Les 3 piliers de Scrum
+                </h2>
 
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+                    {pillars.map((pillar) => (
+                        <Card
+                            key={pillar.title}
+                            title={pillar.title}
+                            icon={pillar.icon}
+                            onClick={() => setSelectedPillar(pillar)}
+                            className="glass-card"
+                            style={{
+                                width: '200px',
+                                textAlign: 'center',
+                                border: selectedPillar?.title === pillar.title
+                                    ? '2px solid var(--primary)'
+                                    : '1px solid white'
+                            }}
+                        />
+                    ))}
+                </div>
+
+                <DetailSection
+                    item={selectedPillar}
+                    onClose={() => setSelectedPillar(null)}
+                />
+            </section>
             {/* 1. ROLES */}
             <section style={{ marginBottom: '4rem' }}>
                 <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>▪️ Rôles Scrum</h2>
