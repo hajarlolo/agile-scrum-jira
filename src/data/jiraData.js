@@ -115,7 +115,8 @@ export const jiraWhy = {
     quote: "Jira transforme les principes Agile en actions mesurables."
 };
 
-export    { title: "Projet", icon: "📁", desc: "Un projet Jira est un espace de travail qui contient toutes les tâches, sprints, utilisateurs et configurations liées à un objectif précis." },
+export const jiraDefinitions = [
+    { title: "Projet", icon: "📁", desc: "Un projet Jira est un espace de travail qui contient toutes les tâches, sprints, utilisateurs et configurations liées à un objectif précis." },
     { title: "Issue", icon: "🧱", desc: "Une issue représente une unité de travail dans Jira, elle peut être de type ( Epic, Story, Task, Bug.)." },
     { title: "User Story", icon: "📘", desc: "courte description d’un besoin utilisateur,sert à guider le développement,écrite sous forme. En tant que [type d’utilisateur],je veux [fonctionnalité],afin de [bénéfice / objectif]." },
     { title: "Sous-tâche", icon: "🧾", desc: "Une Sub-task est une partie d’une issue principale, utilisée pour détailler le travail." },
@@ -131,4 +132,5 @@ export    { title: "Projet", icon: "📁", desc: "Un projet Jira est un espace d
     { title: "JQL", icon: "🧮", desc: "Le JQL est un langage de requêtes utilisé pour rechercher des issues de manière avancée." },
     { title: "Priorité", icon: "📌", desc: "La Priority indique l’importance d’une issue (High, Medium, Low)." }
 ];
+
 
