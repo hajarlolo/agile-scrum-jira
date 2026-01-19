@@ -1,4 +1,35 @@
 // src/data/scrumData.js
+export const pillars = [
+    {
+        title: "Transparence",
+        icon: "🔍",
+        definition: `La transparence garantit que tous les aspects importants du processus Scrum
+sont visibles et compris par tous les acteurs.
+
+Les informations clés comme l’avancement du travail, les obstacles
+et les responsabilités doivent être clairement partagées afin de
+faciliter la prise de décision.`
+    },
+    {
+        title: "Inspection",
+        icon: "🧐",
+        definition: `L’inspection consiste à examiner régulièrement les artefacts Scrum
+et l’avancement du travail afin de détecter rapidement les écarts.
+
+Elle permet d’identifier les problèmes ou risques suffisamment tôt
+pour éviter des impacts négatifs sur le produit.`
+    },
+    {
+        title: "Adaptation",
+        icon: "🔄",
+        definition: `L’adaptation consiste à ajuster rapidement le processus, le plan
+ou le produit lorsque l’inspection révèle des écarts ou des problèmes.
+
+Elle permet à l’équipe Scrum de rester flexible et de s’améliorer
+en continu.`
+    }
+];
+
 export const roles = [
     {
         title: 'Product Owner',
