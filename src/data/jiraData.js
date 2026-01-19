@@ -115,10 +115,9 @@ export const jiraWhy = {
     quote: "Jira transforme les principes Agile en actions mesurables."
 };
 
-export const jiraDefinitions = [
-    { title: "Projet", icon: "📁", desc: "Un projet Jira est un espace de travail qui contient toutes les tâches, sprints, utilisateurs et configurations liées à un objectif précis." },
-    { title: "Issue", icon: "🧱", desc: "Une issue représente une unité de travail dans Jira (tâche, bug, user story, epic)." },
-    { title: "Types d'Issues", icon: "📘", desc: "Types courants d’issues : Epic, Story, Task, Bug." },
+export    { title: "Projet", icon: "📁", desc: "Un projet Jira est un espace de travail qui contient toutes les tâches, sprints, utilisateurs et configurations liées à un objectif précis." },
+    { title: "Issue", icon: "🧱", desc: "Une issue représente une unité de travail dans Jira, elle peut être de type ( Epic, Story, Task, Bug.)." },
+    { title: "User Story", icon: "📘", desc: "courte description d’un besoin utilisateur,sert à guider le développement,écrite sous forme. En tant que [type d’utilisateur],je veux [fonctionnalité],afin de [bénéfice / objectif]." },
     { title: "Sous-tâche", icon: "🧾", desc: "Une Sub-task est une partie d’une issue principale, utilisée pour détailler le travail." },
     { title: "Backlog", icon: "🗂️", desc: "Le Product Backlog est la liste priorisée de toutes les issues du projet qui restent à réaliser." },
     { title: "Sprint", icon: "📅", desc: "Un Sprint est une période de temps fixe (1 à 4 semaines) durant laquelle l’équipe développe un incrément de produit." },
@@ -132,3 +131,4 @@ export const jiraDefinitions = [
     { title: "JQL", icon: "🧮", desc: "Le JQL est un langage de requêtes utilisé pour rechercher des issues de manière avancée." },
     { title: "Priorité", icon: "📌", desc: "La Priority indique l’importance d’une issue (High, Medium, Low)." }
 ];
+
